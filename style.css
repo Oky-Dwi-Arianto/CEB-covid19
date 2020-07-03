@@ -1,0 +1,527 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:800&display=swap');
+
+
+/*Reset*/
+* {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+/*VERSI DESKTOP*/
+
+/*Header*/
+li {
+	list-style: none;
+	float: left;
+	
+	padding: 37px 25px;
+  }
+  
+  
+  .header {
+	  width: 100%;
+	  background-color: rgba(0,0,0,0.5);
+	color: #f8f8ff;
+	height: auto;
+	position: fixed;
+	font-family: "Comic Sans MS";
+	z-index: 1;
+  }
+  
+  
+  .header-logo img {
+	float: left;
+	width: 200px;
+	padding: 20px;
+	margin-left: 20px;
+  }
+  
+  
+  .header-list {
+	  float: right;
+	  font-size: 20px;
+	  margin-right: 20px;
+  }
+
+  
+
+  .flex-list {
+	display: flex;
+  }
+  .flex-list li {
+	flex: auto;
+  }
+
+  @media (max-width: 1000px) {
+	.flex-list {
+	  flex-wrap: wrap;
+	}
+	.flex-list li {
+	  width: 30%;
+	}
+
+	.header-list {
+		float: left;
+		font-size: 20px;
+		margin-right: 5px;
+	}
+  
+  }
+
+  @media (max-width:67px) {
+	/* Tetapkan flex-direction milik .flex-list */
+	.flex-list{
+	  flex-direction:column;
+	}
+	.flex-list li a{
+	  margin:0 auto;
+	}
+}
+  .header-list a {
+	  color: #fff;
+	  text-decoration: none;
+  }
+  
+  
+  .header-list a:hover {
+	  color: yellow;
+	  transition: 1.5s;
+  }
+  
+  
+  .clear {
+	  clear: both;
+  }
+
+/*Bagian Sampul*/
+a {
+	text-decoration: none;
+  }
+  
+  .container {
+	max-width: 1130px;
+	padding: 0 15px;
+	margin: 0 auto;
+  }
+  
+  .top-wrapper {
+	padding: 240px 0 120px 0;
+	background-image: url(img/backg_up.png);
+	background-size: cover;
+	color: white;
+	text-align: center;
+  }
+  
+  .top-wrapper h1 {
+	opacity: 0.7;
+	font-size: 72px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+  }
+  
+  .top-wrapper p {
+	opacity: 0.7;
+	font-size: 24px;
+	margin-bottom: 3px;
+  }
+  
+  .btn-wrapper {
+	margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+	margin: 10px 0;
+  }
+  
+  .btn {
+	padding: 12px 24px;
+	color: white;
+	display: inline-block;
+	opacity: 0.8;
+	border-radius: 4px;
+  }
+  
+  .btn:hover {
+	opacity: 1;
+  }
+  
+  .fa {
+	margin-right: 5px;
+  }
+  
+  header {
+	height: 100px;
+	width: 100%;
+	background-color: rgba(0, 79, 108, 0.5);
+	/* Ubah position ke fixed, dan top ke 0 */
+	position: fixed;
+	top: 0;
+	
+	/* Ubah z-index ke 10 */
+	z-index: 10;
+  }
+  
+  .logo {
+	width: 220px;
+	margin-top: 15px;
+  }
+  
+  .header-left {
+	float: left;
+  }
+  
+  .header-right {
+	float: right;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: all 0.5s;
+  }
+  
+  .header-right:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .header-right a {
+	line-height: 65px;
+	padding: 0 25px;
+	color: white;
+	display: block;
+  }
+  
+  .lesson-wrapper {
+	height: 500px;
+	padding-bottom: 80px;
+	background-color: #f7f7f7;
+	text-align: center;
+  }
+  
+  .heading {
+	padding-top: 60px;
+	padding-bottom: 30px;
+	color: #5f5d60;
+  }
+  
+  .heading h2 {
+	font-weight: normal;
+  }
+  
+  .lesson {
+	float: left;
+	width: 25%;
+  }
+  
+  .lesson-icon {
+	position: relative;
+  }
+  
+  .lesson-icon p {
+	position: absolute;
+	top: 90px;
+	width: 100%;
+	color: white;
+  }
+  
+  .txt-contents {
+	width: 80%;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 15px;
+	color: #b3aeb5;
+  }
+  
+  .heading h3 {
+	font-weight: normal;
+  }
+  
+  .message-wrapper {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 80px;
+	text-align: center;
+  }
+  
+  .message {
+	padding: 15px 40px;
+	background-color: #5dca88;
+	cursor: pointer;
+	box-shadow: 0 7px #1a7940;
+  }
+  
+  .message:active {
+	position: relative;
+	top: 7px;
+	box-shadow: none;
+  }
+  
+/*Main Tambahan*/
+main {
+	background-color: #fff;
+	color: #fff
+}
+
+main a{
+	color: #fff;
+}
+
+main .container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+	main .container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+  }
+
+main #content,
+main aside {
+	margin: 20px 15px;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+
+main #content {
+	max-width: 75%;
+	background-color: #fff;
+	padding: 15px;
+}
+
+@media (max-width:670px) {
+	main aside {
+		max-width: 50%;
+		background-color: #fff;
+		padding: 15px 15px;
+	}
+}
+
+
+main aside {
+	width: 75%;
+	background-color: #fff;
+	padding: 15px 15px;
+}
+
+
+
+/*Content (Samping Kiri)*/
+#tentang,
+#covid-19,
+#penularan, 
+#pencegahan {
+	width: 100%;
+	height: auto;
+	background-color: #27617B;
+	padding: 30px 15px;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+}
+
+
+#tentang h2,
+#covid-19 h2,
+#penularan h2,
+#pencegahan h2 {
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+#tentang img,
+#covid-19 img,
+#penularan img,
+#pencegahan img {
+	display: block;
+	width: 200px;
+	padding: 15px 0;
+	margin: 0 auto;
+	animation-name: gerak;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes gerak {
+  from {transform: translateX(-5px);}
+  to {transform: translateX(10px);}
+}
+
+
+figcaption {
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+figcaption a {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+#kasus-indonesia figcaption,
+#kasus-indonesia figcaption a {
+	color: #27617B;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 14px;
+} 
+
+
+#tentang p,
+#covid-19 p,
+#penularan p, 
+#pencegahan p{
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+
+/*Aside (Samping Kanan*/
+#kasus-indonesia,
+#rs-rujukan,
+#nama-tim {
+	width: 100%;
+	height: auto;
+	padding: 30px 15px;
+	box-sizing: border-box;
+	transition: .4s;
+}
+
+
+#kasus-indonesia:hover,
+#rs-rujukan:hover,
+#nama-tim:hover {
+	background-color: rgba(236, 236, 236, .5);
+}
+
+
+aside h2 {
+	font-size: 22px;
+	color: #27617B;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+
+#kasus-indonesia img {
+	display: block;
+	width: 200px;
+	border-radius: 0;
+	margin: 0 auto;
+}
+
+
+#nama-tim li {
+	margin-left: 30px;
+	color: #27617B;
+	line-height: 1.8em;
+}
+
+
+#kasus-indonesia table {
+	margin: 0 auto;
+	padding: 8px 0;
+}
+
+
+#kasus-indonesia table td,
+#rs-rujukan table td,
+#nama-tim table td {
+	color: #27617B;
+	vertical-align: top;
+	line-height: 1.8em;
+}
+
+
+#kasus-indonesia table td {
+	font-size: 14px;
+}
+
+
+#kasus-indonesia table .titik-dua,
+#nama-tim table .titik-dua {
+	padding: 0 5px;
+}
+
+
+#rs-rujukan .nama-rs {
+	max-width: 100px;
+}
+
+
+#rs-rujukan td {
+	padding: 8px;
+}
+
+/* Footer */
+.footer{
+	background-color: rgba(0,0,0,0.5);
+	color: #f8f8ff;
+}
+
+.footer-container{
+	width: 100%;
+	min-height: 100px;
+	padding: 10px;
+}
+
+@media (max-width: 500px) {
+	.footer-container{
+		width: 100%;
+		min-height: 500px;
+		padding: 10px;
+	}
+  }
+.footer-logo img{
+	width: 200px;
+	min-height: auto;
+	padding: 20px;
+	margin-left: 20px;
+	float: left;
+}
+@media (max-width: 500px) {
+	.footer-anggota {
+		width: auto;
+		min-height: 100px;
+		float: left;
+		padding: 20px;
+		font-size: 20px;
+		margin-right: 20px;
+	}
+  }
+
+  .footer-anggota {
+	width: auto;
+	min-height: 100px;
+	float: right;
+	padding: 20px;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+
+.footer-anggota li{
+	float: left;
+	padding: 5px;
+}
